@@ -40,7 +40,3 @@ npm run convert <input.html>
 | 背景色 | 100% |
 | 圆角 | 100% |
 | **总体** | **92-95%** |
-
----
-
-*详细文档：../README_WECHAT_CONVERTER.md*

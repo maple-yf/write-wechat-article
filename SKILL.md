@@ -43,7 +43,7 @@ description: Use when the user asks to "写一篇公众号文章", "创作公众
 当用户说"写一篇关于XXX的公众号文章"时：
 
 **Step 1: 深度调研**
-- 使用 deep-rearch / agent-reach / browser-use skills
+- 使用 deep-research / agent-reach / browser-use skills
 - 详见：[PROCESS_GUIDE.md#调研流程](specs/PROCESS_GUIDE.md#二调研流程)
 
 **Step 2: 文案创作**
