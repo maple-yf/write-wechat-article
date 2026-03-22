@@ -1,6 +1,6 @@
 ---
 name: write-wechat-article
-description: Use when the user asks to "写一篇公众号文章", "创作公众号内容", "生成微信公众号文章", "优化这篇文章", "润色文章", "给文章起标题", or mentions WeChat public account (微信公众号), WeChat article formatting, WeChat-compatible HTML, article cover generation, or wants to create content for WeChat public account. Make sure to use this skill whenever the user mentions WeChat, 公众号, article writing, content creation, or needs help with article formatting or title generation.
+description: Use when the user asks to "写一篇公众号文章", "创作公众号内容", "写公众号文章", "生成微信公众号文章", "优化这篇文章", "润色文章", "给文章起标题", or mentions WeChat public account (微信公众号), WeChat article formatting, WeChat-compatible HTML, article cover generation, or wants to create content for WeChat public account. Make sure to use this skill whenever the user mentions WeChat, 公众号, article writing, content creation, or needs help with article formatting or title generation.
 ---
 
 # 微信公众号文章写作技能
@@ -56,11 +56,16 @@ description: Use when the user asks to "写一篇公众号文章", "创作公众
 - 详见：[FORMAT_SPEC.md#HTML生成](specs/FORMAT_SPEC.md)
 
 **Step 4: 设计配图**
-- **封面图**：生成 cover-[slug].html（左侧矩形1175×500px + 右侧方形500×500px）
-- **插图**：根据文章内容生成3-5张插图
-  - 对比图（问题 vs 方案）
-  - 核心能力图（功能/特性介绍）
-  - 流程图（步骤/教程）
+- **4.1 生成封面图**：生成 cover-[slug].html（左侧矩形1175×500px + 右侧方形500×500px）
+- **4.2 风格匹配**：根据文章内容推荐插图风格
+  - AI 分析全文内容和关键词
+  - 推荐 1-3 种风格供用户选择
+  - 用户确认后应用对应色值方案
+  - 详见：[STYLE_PALETTE.md](specs/STYLE_PALETTE.md)
+- **4.3 生成插图**：使用确认的风格生成 3-5 张插图
+  - 插图类型：comparison（对比图）、ability（能力图）、process（流程图）
+  - 风格主题：应用用户确认的色值方案
+  - 插图类型决定结构，风格主题提供视觉样式
 - 详见：[FORMAT_SPEC.md#配图设计](specs/FORMAT_SPEC.md#五配图设计规范)
 
 **Step 5: 质量检验**
@@ -112,6 +117,14 @@ description: Use when the user asks to "写一篇公众号文章", "创作公众
 - 科技蓝主题（封面/插图）：`#0EA5E9`、`#38BDF8`
 
 详见：[FORMAT_SPEC.md#主题色](specs/FORMAT_SPEC.md#一主题色规范)
+
+### 插图风格
+
+- 14 种可用风格，详见 [STYLE_PALETTE.md](specs/STYLE_PALETTE.md)
+- 风格匹配：AI 根据文章内容自动推荐合适风格
+- 插图类型：comparison（对比）、ability（能力）、process（流程）
+
+详见：[STYLE_PALETTE.md](specs/STYLE_PALETTE.md#插图风格)
 
 ### 配图规范速查
 
