@@ -53,7 +53,7 @@ description: Use when the user asks to "写一篇公众号文章", "创作公众
 **Step 3: 生成文档**
 - 生成 Markdown 文件
 - 生成微信公众号 HTML
-- 详见：[FORMAT_SPEC.md#HTML生成](specs/FORMAT_SPEC.md)
+- 详见：[FORMAT_SPEC.md](specs/FORMAT_SPEC.md)
 
 **Step 4: 设计配图**
 - **4.1 生成封面图**：生成 cover-[slug].html（左侧矩形1175×500px + 右侧方形500×500px）
