@@ -119,11 +119,32 @@ defuddle parse "<url>" --json --md
 - 根据文章内容生成 3-5 张插图
 - 插图类型：comparison、ability、process
 - 插图直接嵌入到文章 HTML 中
+- 保存到 `output/[文章slug]/illustration-[slug].html`
 
 ### 4.2 文件命名规范
 
 - 文章 slug：小写字母 + 连字符
 - 示例：`openclaw-chain-effect`、`pinchbench-intro`
+
+### 4.3 插图风格匹配
+
+**Step 1：分析文章内容**
+- 读取文章标题和正文
+- 提取关键词并统计频率
+
+**Step 2：推荐风格**
+- 计算每种风格的匹配得分
+- 生成推荐报告（前 3 种风格）
+
+**Step 3：用户确认**
+- 展示推荐报告
+- 等待用户选择或确认
+
+**Step 4：应用色值**
+- 根据确认的风格，应用对应色值方案
+- 结合插图类型生成最终插图
+
+详见：[STYLE_PALETTE.md](specs/STYLE_PALETTE.md)
 
 ---
 
