@@ -1,0 +1,12 @@
+{
+  "name": "write-wechat-article-scripts",
+  "version": "1.0.0",
+  "description": "微信公众号文章转换工具",
+  "scripts": {
+    "convert": "node convert_html_to_wechat.js"
+  },
+  "dependencies": {
+    "juice": "^10.0.0",
+    "cheerio": "^1.0.0"
+  }
+}
