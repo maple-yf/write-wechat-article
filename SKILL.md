@@ -256,7 +256,7 @@ description: Use when the user asks to "写一篇公众号文章", "创作公众
 
 ## 输出位置
 
-**默认**：`./output/[文章slug]/`
+**默认**：`./output/[文章slug]/`，在Agent的工作目录下，而不是skill的目录。
 
 **可配置**：
 - 调用参数：`--output ./my-output`
