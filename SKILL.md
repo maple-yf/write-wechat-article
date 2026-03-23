@@ -119,7 +119,6 @@ description: Use when the user asks to "写一篇公众号文章", "创作公众
 ### 主题色
 
 - 微信文章色：`rgb(0, 112, 192)` 或 `#0070c0`
-- 科技蓝主题（封面/插图）：`#0EA5E9`、`#38BDF8`
 
 详见：[FORMAT_SPEC.md#主题色](specs/FORMAT_SPEC.md#一主题色规范)
 
