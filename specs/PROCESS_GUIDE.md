@@ -108,12 +108,13 @@ defuddle parse "<url>" --json --md
 
 **Step 2：生成 HTML**
 - 遵循 FORMAT_SPEC.md 的兼容性规范
+- 正文里适当增加绿色、黄色和红色的背景，左侧是单条颜色左边框，文字背景使用淡一点的颜色作为背景色。正向内容采用绿色背景，负向内容采用黄色背景，特别禁止的或者特别严重的采用红色背景。一共2-3处即可，不能超过4处。
 - 保存到 `output/[文章slug]/[slug]-wechat.html`
 
 **Step 3：生成封面图**
 - 左侧矩形（1175×500px）+ 右侧方形（500×500px）
-- 根据文章内容选择封面图风格，详见：[STYLE_PALETTE.md](specs/STYLE_PALETTE.md)
-- 所有内容要保持在容器内，不能超出容器
+- 根据文章内容选择封面图风格，详见：[STYLE_PALETTE.md](STYLE_PALETTE.md)
+- 所有内容要保持在容器内，不能超出容器范围
 - 保存到 `output/[文章slug]/cover-[slug].html`
 
 **Step 4：生成插图**
@@ -145,7 +146,7 @@ defuddle parse "<url>" --json --md
 - 根据确认的风格，应用对应色值方案
 - 结合插图类型生成最终插图
 
-详见：[STYLE_PALETTE.md](specs/STYLE_PALETTE.md)
+详见：[STYLE_PALETTE.md](STYLE_PALETTE.md)
 
 ---
 
@@ -165,9 +166,9 @@ defuddle parse "<url>" --json --md
 - [ ] 标题层级合理
 
 **HTML 检查：**
-- [ ] 文字使用主题色 `rgb(0, 112, 192)`
-- [ ] H1 居中 + 主题蓝背景 + 白色字体
-- [ ] H2 使用主题蓝色和下边框
+- [ ] 文字使用主题色符合风格的主题色
+- [ ] H1 居中 + 符合风格的主题色 + 白色字体
+- [ ] H2 使用复合风格的主题色和下边框
 - [ ] 表格背景色应用到 `<th>` 标签
 - [ ] 列表使用 `<p>` + `•`
 - [ ] 使用 `<section>` 而非 `<div>`
@@ -211,7 +212,7 @@ message(
   media=<图片路径>
 )
 ```
-
+不要发送图片文件路径，要用飞书发送图片。
 ### 6.3 清理和关闭
 
 ```bash
